@@ -1,18 +1,40 @@
+'use client'
+
+
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section>
-            <div className="grid grid-cols-1 lg:grid-cols-12">
-                <div className="col-span-7 place-self-center">
-                    <h1 className="text-white text-6xl font-extrabold mb-4">Howwie, My name is Syahrial Rizky </h1>
+        <section className="">
+            <div className="grid grid-cols-1 sm:grid-cols-12">
+                <div className="col-span-7 place-self-center text-center sm:text-left">
+                    <h1 className="text-white text-4xl lg:text-6xl font-extrabold mb-4">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-300"> Hello, I`m {""}</span>
+                   <br />
+                        <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Syahrial Rizky',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Informatic Student',
+        1000,
+        'Web Developer',
+        1000,
+          ]}
+      wrapper="span"
+      speed={40}
+     
+      repeat={Infinity}
+    />    
+                    </h1>
                     <p className="font-light text-[#ADB7BE] text-lg mb-6 lg:text-xl">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, veniam ut! Rerum dignissimos eius aliquid quisquam asperiores accusamus, iste itaque repellat temporibus repellendus laudantium architecto incidunt ut cupiditate explicabo esse.
                     </p>
-                    <div className="">
-                        <button>Pencet aku</button>
-                        <button>Kyaaa dame damee!</button>
+                    <div className="py-12 sm:py-0">
+                        <button className="btn px-6 py-3 w-full sm:w-fit btn-outline text-white rounded-full mr-4 hover:bg-gradient-to-br from-indigo-600 to-purple-600  hover:border-none">Baca blogku</button>
+                        <button className="btn px-6 py-3 w-full sm:w-fit btn-outline text-white rounded-full mt-4 hover:bg-gradient-to-br from-indigo-600 to-purple-600  hover:border-none">Hubungi saya</button>
                     </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
