@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import NavList from './navlist'
+import MenuOverlay from './menuOverlay';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 
 const navLinks = [
@@ -44,11 +45,12 @@ const Navbar = () => {
                             <NavList href={link.path} title={link.title} />
                         </li>
                     )
-                )}
-                    
+                )}      
                 </ul>
             </div>
         </div>
+        {navbarOpen  ? <MenuOverlay navLinks={navLinks}/> : null}
+
        </nav>
     )
 }

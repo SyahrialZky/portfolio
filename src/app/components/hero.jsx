@@ -7,7 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section className="">
+        <section className="min-h-screen">
             <div className="grid grid-cols-1 sm:grid-cols-12">
                 <div className="col-span-7 place-self-center text-center sm:text-left">
                     <h1 className="text-white text-4xl lg:text-6xl font-extrabold mb-4">
@@ -30,11 +30,11 @@ const HeroSection = () => {
     />    
                     </h1>
                     <p className="font-light text-[#ADB7BE] text-lg mb-6 lg:text-xl">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, veniam ut! Rerum dignissimos eius aliquid quisquam asperiores accusamus, iste itaque repellat temporibus repellendus laudantium architecto incidunt ut cupiditate explicabo esse.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maiores architecto, porro corrupti nostrum fugiat asperiores ea vel cum officiis.
                     </p>
                     <div className="py-12 sm:py-0">
-                        <button className="btn px-6 py-3 w-full sm:w-fit btn-outline text-white rounded-full mr-4 hover:bg-gradient-to-br from-indigo-600 to-purple-600  hover:border-none">Baca blogku</button>
-                        <button className="btn px-6 py-3 w-full sm:w-fit btn-outline text-white rounded-full mt-4 hover:bg-gradient-to-br from-indigo-600 to-purple-600  hover:border-none">Hubungi saya</button>
+                        <button className="btn px-6 py-3 w-full sm:w-fit text-white rounded-full mr-4 bg-gradient-to-br from-indigo-600 to-purple-600  ">Baca blogku</button>
+                        <button className="btn px-6 py-3 w-full sm:w-fit btn-outline text-white rounded-full mt-4 hover:bg-gradient-to-br from-indigo-600 to-purple-600  hover:border-none hover:text-white">Hubungi saya</button>
                     </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
